@@ -16,7 +16,7 @@ function ProductCarousel({ images }) {
             <Slider {...settings}>
                 {images&&images.length>0&&images.map(img => {
                     return <div className="p-2 d-flex justify-content-center align-items-center">
-                        <img src={img} width={'500px'} />
+                        <img src={img} width={'500px'}  />
                     </div>
                 })}
             </Slider>

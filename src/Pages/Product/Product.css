@@ -1,18 +1,52 @@
 .ProductPage
 {
     min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+/* Left + Right Half */
 .halfDiv
 {
     width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
+/* Product Images Section */
 .productImagesDiv
 {
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+
+/* Product Info Section */
 .productInfoDiv
 {
-    height: 100vh;
-    /* background: red; */
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+
+@media (max-width: 768px)
+{
+    .halfDiv
+    {
+        width: 100%;
+    }
+
+    .productImagesDiv
+    {
+        min-height: 50vh;
+    }
+
+    .productInfoDiv
+    {
+        min-height: auto;
+    }
 }

@@ -4,6 +4,8 @@ import StoreNavbar from './Components/Navbar/Navbar';
 import Product from './Pages/Product/Product';
 import CartPage from './Pages/CartPage/Cart';
 import { Routes, Route } from 'react-router-dom';
+
+
 function App() {
   return (
     <div style={{ overflow: 'hidden' }}>
@@ -13,6 +15,8 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/Product/:id' element={<Product/>} />
         <Route path='/MyCart' element={<CartPage/>} />
+        
+
       </Routes>
       {/* <Product /> */}
       {/* <Home /> */}

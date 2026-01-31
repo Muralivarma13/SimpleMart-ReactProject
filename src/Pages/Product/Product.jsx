@@ -33,7 +33,7 @@ function Product() {
     localStorage.setItem("cartItems", JSON.stringify(cart));
 
       window.dispatchEvent(new Event("storage"));
-    // alert("Product added to cart 🛒");
+    alert("Product added to cart 🛒");
 };
 
 
